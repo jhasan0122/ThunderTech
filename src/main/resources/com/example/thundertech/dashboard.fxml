@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="610.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thundertech.DashboardController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="1216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/dashboard.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="253.0" layoutY="138.0" mnemonicParsing="false" onAction="#py" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="453.0" layoutY="138.0" mnemonicParsing="false" onAction="#ht" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="645.0" layoutY="138.0" mnemonicParsing="false" onAction="#js" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="839.0" layoutY="138.0" mnemonicParsing="false" onAction="#ap" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="1029.0" layoutY="138.0" mnemonicParsing="false" onAction="#io" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="253.0" layoutY="290.0" mnemonicParsing="false" onAction="#ml" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="453.0" layoutY="290.0" mnemonicParsing="false" onAction="#dl" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="645.0" layoutY="290.0" mnemonicParsing="false" onAction="#wb" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="839.0" layoutY="290.0" mnemonicParsing="false" onAction="#dd" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="1029.0" layoutY="290.0" mnemonicParsing="false" onAction="#ai" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutY="164.0" mnemonicParsing="false" onAction="#contract_manager" prefHeight="54.0" prefWidth="230.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+   </children>
+</AnchorPane>

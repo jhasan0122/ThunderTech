@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thundertech.PostController">
+   <children>
+      <ImageView fitHeight="676.0" fitWidth="1218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/temp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/back_btn.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#post_to_dashboard" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Text fx:id="post_type" layoutX="513.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="372.13671875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="title" layoutX="275.0" layoutY="184.0" prefHeight="51.0" prefWidth="266.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="275.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="description" layoutX="275.0" layoutY="294.0" prefHeight="256.0" prefWidth="572.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="974.0" layoutY="500.0" mnemonicParsing="false" onAction="#post" prefHeight="58.0" prefWidth="102.0" text="Post" />
+      <Text layoutX="275.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="656.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="expt_date" layoutX="647.0" layoutY="184.0" prefHeight="51.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

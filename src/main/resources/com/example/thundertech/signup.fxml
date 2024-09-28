@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thundertech.SignupController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="1218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/signup.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="484.0" layoutY="85.0" prefHeight="43.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="484.0" layoutY="252.0" prefHeight="43.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone" layoutX="484.0" layoutY="333.0" prefHeight="43.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="484.0" layoutY="168.0" prefHeight="43.0" prefWidth="319.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="901.0" layoutY="531.0" mnemonicParsing="false" onAction="#signup" prefHeight="56.0" prefWidth="153.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="22.0" layoutY="23.0" mnemonicParsing="false" onAction="#signup_to_login" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="22.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/back_btn.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
