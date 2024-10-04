@@ -143,7 +143,6 @@ public class SignupController {
         }
     }
 
-
     @FXML
     void signup_to_login(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("login.fxml"));

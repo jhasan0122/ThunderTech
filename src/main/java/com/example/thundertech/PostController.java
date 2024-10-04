@@ -1,7 +1,5 @@
 package com.example.thundertech;
 
-
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,6 +36,8 @@ public class PostController implements Initializable {
     @FXML
     private TextField title;
 
+    @FXML
+    private TextField expt_cost;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -102,6 +102,7 @@ public class PostController implements Initializable {
         String title_str = title.getText();
         String description_str = description.getText();
         LocalDate expt_date_rcv = expt_date.getValue();
+        String expt_costS = expt_cost.getText();
 
         boolean flag = true;
 
@@ -120,9 +121,14 @@ public class PostController implements Initializable {
             flag = false;
         }
 
+        if(expt_costS.isEmpty()){
+            System.out.println(5);
+            flag = false;
+        }
+
         if(flag){
             System.out.println(5);
-            String sql = "insert into post(username,domain,title,details,expt_date) values (?,?,?,?,?)";
+            String sql = "insert into post(username,domain,title,details,expt_date,expt_cost) values (?,?,?,?,?,?)";
             final String URL = "jdbc:mysql://localhost:3306/thundertech";
             final String USER = "root";
             final String PASSWORD = "";
@@ -138,6 +144,7 @@ public class PostController implements Initializable {
                 pst.setString(3, title_str);
                 pst.setString(4, description_str);
                 pst.setString(5, expt_date_rcv.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+                pst.setString(6, expt_costS);
 
                 // Execute the SQL INSERT statement
                 int row = pst.executeUpdate();
@@ -162,13 +169,24 @@ public class PostController implements Initializable {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-
         }
     }
 
+    @FXML
+    void post_ot_msgr(ActionEvent event) {
+        DashboardController.domain = 0;
+        Parent parent = null;
+        try {
+            parent = FXMLLoader.load(getClass().getResource("chat.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Scene scene2 = new Scene(parent);
 
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Sign Up");
 
-
-
-
+        window.setScene(scene2);
+        window.show();
+    }
 }

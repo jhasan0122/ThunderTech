@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--<?import com.gluonhq.charm.glisten.control.DropdownButton?>-->
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TextArea?>
@@ -10,8 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="610.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thundertech.PostController">
+<AnchorPane prefHeight="610.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thundertech.PostController">
    <children>
       <ImageView fitHeight="676.0" fitWidth="1218.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -56,5 +57,24 @@
          </font>
       </Text>
       <DatePicker fx:id="expt_date" layoutX="647.0" layoutY="184.0" prefHeight="51.0" prefWidth="200.0" />
+      <Button layoutX="7.0" layoutY="171.0" mnemonicParsing="false" onAction="#post_ot_msgr" prefHeight="58.0" prefWidth="225.0" style="-fx-border-color: rgba(255, 255, 255, 0); -fx-background-color: rgba(255, 255, 255, 0);" />
+      <Button fx:id="post_msgr1" layoutX="7.0" layoutY="106.0" mnemonicParsing="false" onAction="#post_to_dashboard" prefHeight="58.0" prefWidth="225.0" style="-fx-border-color: rgba(255, 255, 255, 0); -fx-background-color: rgba(255, 255, 255, 0);" />
+      <TextField fx:id="expt_cost" layoutX="908.0" layoutY="184.0" prefHeight="51.0" prefWidth="266.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="908.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Cost">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+<!--      <DropdownButton layoutX="974.0" layoutY="141.0">-->
+<!--          <items>-->
+<!--              <MenuItem text="Choice 1" />-->
+<!--              <MenuItem text="Choice 2" />-->
+<!--              <MenuItem text="Choice 3" />-->
+<!--          </items>-->
+<!--      </DropdownButton>-->
    </children>
 </AnchorPane>
