@@ -23,5 +23,6 @@
       <Button layoutX="839.0" layoutY="290.0" mnemonicParsing="false" onAction="#dd" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <Button layoutX="1029.0" layoutY="290.0" mnemonicParsing="false" onAction="#ai" prefHeight="112.0" prefWidth="155.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <Button layoutY="164.0" mnemonicParsing="false" onAction="#contract_manager" prefHeight="54.0" prefWidth="230.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
+      <Button layoutX="8.0" layoutY="218.0" mnemonicParsing="false" onAction="#prev_work" prefHeight="43.0" prefWidth="222.0" text="Button" />
    </children>
 </AnchorPane>

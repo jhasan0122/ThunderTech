@@ -23,7 +23,6 @@
       </TextField>
       <Button layoutX="278.0" layoutY="455.0" mnemonicParsing="false" onAction="#login_btn" prefHeight="54.0" prefWidth="131.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
       <Button layoutX="373.0" layoutY="546.0" mnemonicParsing="false" onAction="#signup_btn" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
-      <Button layoutX="85.0" layoutY="68.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="131.0" style="-fx-background-color: blue; -fx-border-color: rgba(255, 255, 255, 0);" />
       <PasswordField fx:id="password" layoutX="278.0" layoutY="324.0" prefHeight="42.0" prefWidth="316.0" style="-fx-background-color: rgba(255, 255, 255, 0); -fx-border-color: rgba(255, 255, 255, 0);" />
    </children>
 </AnchorPane>

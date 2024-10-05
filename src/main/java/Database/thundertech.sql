@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2024 at 04:48 PM
+-- Generation Time: Oct 05, 2024 at 06:46 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -33,16 +33,18 @@ CREATE TABLE `post` (
   `title` varchar(255) NOT NULL,
   `details` text NOT NULL,
   `expt_date` date NOT NULL DEFAULT current_timestamp(),
-  `expt_cost` int(11) NOT NULL
+  `expt_cost` int(11) NOT NULL,
+  `post_no` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `post`
 --
 
-INSERT INTO `post` (`username`, `domain`, `title`, `details`, `expt_date`, `expt_cost`) VALUES
-('jehan', 1, 'Build It', 'A real estate project', '2024-09-28', 0),
-('hasan', 6, 'cgfdgdf', 'fgdfgdfg', '2024-09-28', 0);
+INSERT INTO `post` (`username`, `domain`, `title`, `details`, `expt_date`, `expt_cost`, `post_no`) VALUES
+('jehan', 1, 'Build It', 'Lorem Ipsum is\r\n', '2024-10-10', 1200, 1),
+('jehan', 2, 'Explore Plus', 'Lorem Ipsum is', '2024-10-17', 1000, 2),
+('jehan', 4, 'Lamda Tech', 'Lorem Ipsum is', '2024-10-24', 1500, 3);
 
 -- --------------------------------------------------------
 
@@ -65,7 +67,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`username`, `password`, `email`, `designation`, `phone`) VALUES
 ('abdiya', 'jehan@9248', 'a@gmail.com', NULL, '6444654'),
 ('hasan', 'jehan@9248', 'hasan@gmail.com', 1, '45654645'),
-('jehan', 'jehan@9248', 'jhasan0122@gmail.com', 1, '54646456');
+('jehan', '9248', 'jhasan0122@gmail.com', 1, '54646456');
 
 --
 -- Indexes for dumped tables
@@ -75,6 +77,7 @@ INSERT INTO `user` (`username`, `password`, `email`, `designation`, `phone`) VAL
 -- Indexes for table `post`
 --
 ALTER TABLE `post`
+  ADD PRIMARY KEY (`post_no`),
   ADD KEY `username_fk` (`username`);
 
 --
@@ -82,6 +85,16 @@ ALTER TABLE `post`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `post`
+--
+ALTER TABLE `post`
+  MODIFY `post_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables

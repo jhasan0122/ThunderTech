@@ -19,6 +19,24 @@ public class DashboardController implements Initializable {
     static int domain = 0;
 
     @FXML
+    void prev_work(ActionEvent event) {
+        Parent parent = null;
+        try {
+            parent = FXMLLoader.load(getClass().getResource("prev_work.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        Scene scene2 = new Scene(parent);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("Sign Up");
+
+        window.setScene(scene2);
+        window.show();
+    }
+
+    @FXML
     void ai(ActionEvent event) {
         domain = 10;
         Parent parent = null;
